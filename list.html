@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.min.css"
+        integrity="sha512-gRH0EcIcYBFkQTnbpO8k0WlsD20x5VzjhOA1Og8+ZUAhcMUCvd+APD35FJw3GzHAP3e+mP28YcDJxVr745loHw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="assets/icon/list-movies.png">
+    <title>List Movies</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light d-sm-block d-md-none">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home.html"><img src="./assets/images/tickitz-purple.svg" alt="" /></a>
+                <button style="margin-left: 110px;" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a style="margin-left: 5px;width: 40px;" class="member" href="profile.html"><img src="assets/images/photo_profile.png" alt=""></a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+                        <form class="d-flex form-search mt-5 mb-4">
+                            <button type="submit">
+                                <i class="fa fa-search px-3 py-3"></i>
+                            </button>
+                            <input class="form-control" type="search" placeholder="Search..." aria-label="Search" />
+                        </form>
+                        <hr>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <hr>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="list.html">List Movies</a>
+                        </li>
+                        <hr>
+
+                        <li class="nav-item mt-5">
+                            <a class="nav-link" href="#">&copy; 2022 Tickitz • All Rights Reserved.</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg navbar-light d-none d-md-block">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home.html">
+                    <img src="./assets/images/tickitz-purple.svg" alt="" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="list.html">List Movies</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item">
+                            <form class="search-box">
+                                <input class="search-txt" type="text" name="" placeholder="Type to search" />
+                                <button class="search-btn" type="submit">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </form>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="./assets/images/photo_profile.png" alt="" />
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li class="d-flex">
+                                    <a class="dropdown-item" href="profile.html">Profile</a><a class="dropdown-item"
+                                        href="sign_in.html">Sign Out</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <section class="upcoming-movies">
+            <div class="coming-soon-product">
+                <div>
+                    <span>List Movies</span>
+                </div>
+                <div class="sort-list-movie">
+                    <select name="sort" id="sort">
+                        <option value="all">All</option>
+                        <option value="title-movies">Title Movie</option>
+                        <option value="genre">Genre Movie</option>
+                    </select>
+                </div>
+                <div class="search-list-movie">
+                    <input type="search" placeholder="Search Movie Name...">
+                </div>
+            </div>
+            <div class="container">
+                <form action="" class="month-movies">
+                    <label><input type="radio" name="month"
+                            value="september">
+                        <div class="month">September</div>
+                    </label>
+                    <label><input type="radio" name="month" value="october">
+                        <div class="month">October</div>
+                    </label>
+                    <label><input type="radio" name="month"
+                            value="november">
+                        <div class="month">November</div>
+                    </label>
+                    <label><input type="radio" name="month"
+                            value="december">
+                        <div class="month">December</div>
+                    </label>
+                    <label><input type="radio" name="month" value="january">
+                        <div class="month">January</div>
+                    </label>
+                    <label><input type="radio" name="month"
+                            value="february">
+                        <div class="month">February</div>
+                    </label>
+                    <label><input type="radio" name="month" value="march">
+                        <div class="month">march</div>
+                    </label>
+                    <label><input type="radio" name="month" value="april">
+                        <div class="month">April</div>
+                    </label>
+                    <label><input type="radio" name="month" value="may">
+                        <div class="month">May</div>
+                    </label>
+                    <label><input type="radio" name="month" value="june">
+                        <div class="month">June</div>
+                    </label>
+                    <label><input type="radio" name="month" value="july">
+                        <div class="month">July</div>
+                    </label>
+                    <label><input type="radio" name="month" value="august">
+                        <div class="month">August</div>
+                    </label>
+                </form>
+                <div class="movies-list">
+                    <div class="card-movies-list">
+                        <img src="assets/images/up-coming1.png" alt="">
+                        <h1>Black Widow</h1>
+                        <p>Action, Adventure, Sci-Fi</p>
+                        <a href="details.html" class="btn-details">Details</a>
+                    </div>
+                    <div class="card-movies-list">
+                        <img src="assets/images/up-coming2.png" alt="">
+                        <h1>The Witches</h1>
+                        <p>Adventure, Comedy, Family</p>
+                        <a href="details.html" class="btn-details">Details</a>
+                    </div>
+                    <div class="card-movies-list">
+                        <img src="assets/images/up-coming3.png" alt="">
+                        <h1>Tenet</h1>
+                        <p>Action, Adventure, Sci-Fi</p>
+                        <a href="details.html" class="btn-details">Details</a>
+                    </div>
+                    <div class="card-movies-list">
+                        <img src="assets/images/up-coming1.png" alt="">
+                        <h1>Black Widow</h1>
+                        <p>Action, Adventure, Sci-Fi</p>
+                        <a href="details.html" class="btn-details">Details</a>
+                    </div>
+                    <div class="card-movies-list">
+                        <img src="assets/images/up-coming2.png" alt="">
+                        <h1>The Witches</h1>
+                        <p>Adventure, Comedy, Family</p>
+                        <a href="details.html" class="btn-details">Details</a>
+                    </div>
+                </div>
+
+                <div class="movies-list">
+                    <div class="card-movies-list">
+                        <img src="assets/images/up-coming1.png" alt="">
+                        <h1>Black Widow</h1>
+                        <p>Action, Adventure, Sci-Fi</p>
+                        <a href="details.html" class="btn-details">Details</a>
+                    </div>
+                    <div class="card-movies-list">
+                        <img src="assets/images/up-coming2.png" alt="">
+                        <h1>The Witches</h1>
+                        <p>Adventure, Comedy, Family</p>
+                        <a href="details.html" class="btn-details">Details</a>
+                    </div>
+                    <div class="card-movies-list">
+                        <img src="assets/images/up-coming3.png" alt="">
+                        <h1>Tenet</h1>
+                        <p>Action, Adventure, Sci-Fi</p>
+                        <a href="details.html" class="btn-details">Details</a>
+                    </div>
+                    <div class="card-movies-list">
+                        <img src="assets/images/up-coming1.png" alt="">
+                        <h1>Black Widow</h1>
+                        <p>Action, Adventure, Sci-Fi</p>
+                        <a href="details.html" class="btn-details">Details</a>
+                    </div>
+                    <div class="card-movies-list">
+                        <img src="assets/images/up-coming2.png" alt="">
+                        <h1>The Witches</h1>
+                        <p>Adventure, Comedy, Family</p>
+                        <a href="details.html" class="btn-details">Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="number-page">
+            <div class="number-active"><span>1</span></div>
+            <div><span>2</span></div>
+            <div><span>3</span></div>
+            <div><span>4</span></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <img src="./assets/images/tickitz-purple.svg" alt="" />
+                    <p>
+                        Stop waiting in line. Buy tickets <br />
+                        conveniently, watch movies quietly
+                    </p>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <h5>Explore</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="list.html">List Movies</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <h5>Our Sponsor</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#"><img class="sponsor" src="./assets/images/ebv_id.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="sponsor" src="./assets/images/CineOne21.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="sponsor" src="./assets/images/hiflix.png" alt="" /></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <h5>Follow us</h5>
+                    <ul class="list-unstyled d-none d-md-block">
+                        <li>
+                            <a href="https://www.facebook.com"><img src="./assets/icon/eva_facebook-outline.png"
+                                    alt="" />Tickitz Cinema id</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com"><img src="./assets/icon/bx_bxl-instagram.png"
+                                    alt="" />tickitz.id</a>
+                        </li>
+                        <li>
+                            <a href="https://www.twitter.com"><img src="./assets/icon/eva_twitter-outline.png"
+                                    alt="" />tickitz.id</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com"><img src="./assets/icon/feather_youtube.png"
+                                    alt="" />Tickitz
+                                Cinema id</a>
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled d-sm-block d-md-none">
+                        <li>
+                            <a href="#"><img src="./assets/icon/eva_facebook-outline.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./assets/icon/bx_bxl-instagram.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./assets/icon/eva_twitter-outline.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./assets/icon/feather_youtube.png" alt="" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center pt-4">
+                <div class="col-auto copyright">
+                    &copy; 2022 Tickitz • All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

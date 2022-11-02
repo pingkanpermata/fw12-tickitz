@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"/>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.min.css"
+    integrity="sha512-gRH0EcIcYBFkQTnbpO8k0WlsD20x5VzjhOA1Og8+ZUAhcMUCvd+APD35FJw3GzHAP3e+mP28YcDJxVr745loHw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" href="assets/icon/ticket.png">
+  <title>Ticket</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light d-sm-block d-md-none">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html"><img src="./assets/images/tickitz-purple.svg" alt="" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+            <form class="d-flex form-search mt-5 mb-4">
+              <button title="submit" type="submit">
+                <i class="fa fa-search px-3 py-3"></i>
+              </button>
+              <input class="form-control" type="search" placeholder="Search..." aria-label="Search" />
+            </form>
+            <hr />
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="home.html">Home</a>
+            </li>
+            <hr />
+            <li class="nav-item">
+              <a class="nav-link" href="list.html">List Movies</a>
+            </li>
+            <hr />
+
+            <li class="nav-item mt-5">
+              <a class="nav-link" href="#">&copy; 2022 Tickitz • All Rights Reserved.</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light d-none d-md-block">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html">
+          <img src="./assets/images/tickitz-purple.svg" alt="" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="list.html">List Movies</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item">
+              <form class="search-box">
+                <input class="search-txt" type="text" name="" placeholder="Type to search" />
+                <button title="search" class="search-btn" type="submit">
+                  <i class="fa fa-search"></i>
+                </button>
+              </form>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img src="./assets/images/photo_profile.png" alt="" />
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li class="d-flex">
+                  <a class="dropdown-item" href="profile.html">Profile</a><a class="dropdown-item"
+                    href="sign_in.html">Sign Out</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <main>
+    <section class="proof-of-payment">
+      <div class="container">
+        <div class="card-proof-of-payment">
+          <h2 class="d-none d-md-block">Proof of Payment</h2>
+          <div class="card-ticket">
+            <div class="header-card d-none d-md-block">
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="admit-one">
+                    <div class="row d-flex align-items-center">
+                      <div class="col">
+                        <img src="./assets/images/tickitz-white.svg" alt="" />
+                      </div>
+                      <div class="col">
+                        <h4>Admit One</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                  <img src="./assets/images/tickitz-white.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-8 order-2 order-lg-1">
+                <div class="detail-ticket">
+                  <div class="row">
+                    <div class="col-7 col-md-12">
+                      <p>Movie</p>
+                      <h6>Spider-Man: Homecoming</h6>
+                    </div>
+                    <div class="col-5 col-md-4 mt-3">
+                      <p>Date</p>
+                      <h6>07 July</h6>
+                    </div>
+                    <div class="col-7 col-md-4 mt-3">
+                      <p>Time</p>
+                      <h6>02:00pm</h6>
+                    </div>
+                    <div class="col-5 col-md-4 mt-3">
+                      <p>Category</p>
+                      <h6>PG-13</h6>
+                    </div>
+                    <div class="col-7 col-md-4 mt-3">
+                      <p>Count</p>
+                      <h6>3 pieces</h6>
+                    </div>
+                    <div class="col-5 col-md-4 mt-3">
+                      <p>Seats</p>
+                      <h6>C4, C5, C6</h6>
+                    </div>
+                    <div class="col-md-4 d-none d-md-block mt-3">
+                      <p>Price</p>
+                      <h5>$30.00</h5>
+                    </div>
+                    <div class="col-12 d-md-none d-sm-block">
+                      <div class="card-total">
+                        <h5>Total</h5>
+                        <h5>$30.00</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 order-1 order-lg-2 d-flex justify-content-center align-items-center">
+                <img src="./assets/images/qr_code.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <img src="./assets/images/tickitz-purple.svg" alt="" />
+          <p>
+            Stop waiting in line. Buy tickets <br />
+            conveniently, watch movies quietly
+          </p>
+        </div>
+        <div class="col-12 col-lg-2">
+          <h5>Explore</h5>
+          <ul class="list-unstyled">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="list.html">List Movies</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-3">
+          <h5>Our Sponsor</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#"><img class="sponsor" src="./assets/images/ebv_id.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img class="sponsor" src="./assets/images/CineOne21.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img class="sponsor" src="./assets/images/hiflix.png" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-3">
+          <h5>Follow us</h5>
+          <ul class="list-unstyled d-none d-md-block">
+            <li>
+              <a href="https://www.facebook.com"><img src="./assets/icon/eva_facebook-outline.png" alt="" />Tickitz Cinema id</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com"><img src="./assets/icon/bx_bxl-instagram.png" alt="" />tickitz.id</a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com"><img src="./assets/icon/eva_twitter-outline.png" alt="" />tickitz.id</a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com"><img src="./assets/icon/feather_youtube.png" alt="" />Tickitz
+                Cinema id</a>
+            </li>
+          </ul>
+          <ul class="list-unstyled d-sm-block d-md-none">
+            <li>
+              <a href="https://www.facebook.com"><img src="./assets/icon/eva_facebook-outline.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com"><img src="./assets/icon/bx_bxl-instagram.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com"><img src="./assets/icon/eva_twitter-outline.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com"><img src="./assets/icon/feather_youtube.png" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row justify-content-center align-items-center pt-4">
+        <div class="col-auto copyright">
+          &copy; 2022 Tickitz • All Rights Reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

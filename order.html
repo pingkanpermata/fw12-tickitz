@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"/>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.min.css"
+    integrity="sha512-gRH0EcIcYBFkQTnbpO8k0WlsD20x5VzjhOA1Og8+ZUAhcMUCvd+APD35FJw3GzHAP3e+mP28YcDJxVr745loHw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" href="assets/icon/order.png">
+  <title>Order</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light d-sm-block d-md-none">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html"><img src="./assets/images/tickitz-purple.svg" alt="" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+            <form class="d-flex form-search mt-5 mb-4">
+              <button type="submit">
+                <i class="fa fa-search px-3 py-3"></i>
+              </button>
+              <input class="form-control" type="search" placeholder="Search..." aria-label="Search" />
+            </form>
+            <hr />
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+            </li>
+            <hr />
+            <li class="nav-item">
+              <a class="nav-link" href="list.html">List Movies</a>
+            </li>
+            <hr />
+
+            <li class="nav-item mt-5">
+              <a class="nav-link" href="#">&copy; 2022 Tickitz • All Rights Reserved.</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light d-none d-md-block">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html">
+          <img src="./assets/images/tickitz-purple.svg" alt="" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="list.html">List Movies</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item">
+              <form class="search-box">
+                <input class="search-txt" type="text" name="" placeholder="Type to search" />
+                <button class="search-btn" type="submit">
+                  <i class="fa fa-search"></i>
+                </button>
+              </form>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img src="./assets/images/photo_profile.png" alt="" />
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li class="d-flex">
+                  <a class="dropdown-item" href="profile.html">Profile</a><a class="dropdown-item"
+                    href="sign_in.html">Sign Out</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <main>
+    <section class="order-movie">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="movie-selected d-none d-md-block">
+              <h2>Movie Selected</h2>
+              <div class="card-movie-selected d-flex justify-content-between align-items-center">
+                <h3>Spider-Man: Homecoming</h3>
+                <a class="btn-change-movie px-3 py-2" href="list.html">Change movie</a>
+              </div>
+            </div>
+            <div class="choose-your-seat">
+              <form action="payment.html">
+                <h2>Choose Your Seat</h2>
+                <div class="card-seat">
+                  <h5>Screen</h5>
+                  <hr>
+                  <table>
+                    <tr>
+                      <td class="seats">A</td>
+                      <td>
+                        <input type="checkbox" value="A1" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="A2" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="A3" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="A4" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="A5" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="A6" disabled />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="A7" />
+                      </td>
+                      <td class="seatGap"></td>
+                      <td>
+                        <input type="checkbox" value="A8" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="A9" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="A10" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="A11" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="A12" disabled />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="A13" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="A14" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="seats">B</td>
+                      <td>
+                        <input type="checkbox" value="B1" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="B2" disabled />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="B3" disabled />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="B4" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="B5" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="B6" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="B7" />
+                      </td>
+                      <td class="seatGap"></td>
+                      <td>
+                        <input type="checkbox" value="B8" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="B9" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="B10" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="B11" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="B12" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="B13" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="B14" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="seats">C</td>
+                      <td>
+                        <input type="checkbox" value="C1" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="C2" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="C3" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="C4" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="C5" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="C6" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="C7" />
+                      </td>
+                      <td class="seatGap"></td>
+                      <td>
+                        <input type="checkbox" value="C8" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="C9" disabled />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="C10" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="C11" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="C12" disabled />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="C13" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="C14" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="seats">D</td>
+                      <td>
+                        <input type="checkbox" value="D1" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="D2" disabled />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="D3" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="D4" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="D5" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="D6" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="D7" />
+                      </td>
+                      <td class="seatGap"></td>
+                      <td>
+                        <input type="checkbox" value="D8" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="D9" disabled />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="D10" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="D11" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="D12" disabled />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="D13" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="D14" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="seats">E</td>
+                      <td>
+                        <input type="checkbox" value="E1" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="E2" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="E3" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="E4" disabled />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="E5" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="E6" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="E7" />
+                      </td>
+                      <td class="seatGap"></td>
+                      <td>
+                        <input type="checkbox" value="E8" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="E9" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="E10" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="E11" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="E12" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="E13" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="E14" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="seats">F</td>
+                      <td>
+                        <input type="checkbox" value="F1" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="F2" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="F3" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="F4" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="F5" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="F6" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="F7" />
+                      </td>
+                      <td class="seatGap"></td>
+                      <td>
+                        <input type="checkbox" value="F8" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="F9" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="F10" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="F11" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="F12" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="F13" disabled />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="F14" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="seats">G</td>
+                      <td>
+                        <input type="checkbox" value="G1" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="G2" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="G3" disabled />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="G4" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="G5" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="C6" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="G7" />
+                      </td>
+                      <td class="seatGap"></td>
+                      <td>
+                        <input type="checkbox" value="G8" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="G9" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="G10" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="G11" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="G12" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="G13" />
+                      </td>
+                      <td>
+                        <input type="checkbox" value="G14" />
+                      </td>
+                    </tr>
+                    <tr class="seats-number">
+                      <td></td>
+                      <td style="height: 40px">1</td>
+                      <td>2</td>
+                      <td>3</td>
+                      <td>4</td>
+                      <td>5</td>
+                      <td>6</td>
+                      <td>7</td>
+                      <td class="seatGap"></td>
+                      <td>8</td>
+                      <td>9</td>
+                      <td>10</td>
+                      <td>11</td>
+                      <td>12</td>
+                      <td>13</td>
+                      <td>14</td>
+                    </tr>
+                  </table>
+                  <div class="seating-key">
+                    <h4>Seating key</h4>
+                    <div class="row">
+                      <div class="col-md-1 col-1">
+                        <div class="available"></div>
+                      </div>
+                      <div class="col-md-2 col-5">
+                        <p>Available</p>
+                      </div>
+                      <div class="col-md-1 col-1">
+                        <div class="selected"></div>
+                      </div>
+                      <div class="col-md-2 col-5">
+                        <p>Selected</p>
+                      </div>
+                      <div class="col-md-1 col-1">
+                        <div class="sold"></div>
+                      </div>
+                      <div class="col-md-2 col-5">
+                        <p>Sold</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row mt-4">
+                  <div class="col d-none d-md-block">
+                    <a href="list.html" class="btn btn-your-movie py-2">
+                      Change your movie
+                    </a>
+                  </div>
+                  <div class="col mb-5 text-end">
+                    <a href="payment.html" class="btn btn-checkout py-2">
+                      Checkout now
+                    </a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-4 d-none d-md-block">
+            <div class="order-info">
+              <h2>Order Info</h2>
+              <div class="card-order-info">
+                <div class="cinema">
+                  <img src="./assets/images/CineOne21.png" alt="" />
+                  <h2>CineOne21 Cinema</h2>
+                </div>
+                <div class="detail-order">
+                  <div class="row">
+                    <div class="col-5">
+                      <p>Movie selected</p>
+                    </div>
+                    <div class="col-7 text-end">
+                      <h6>Spider-Man: Homecoming</h6>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <p>Tuesday, 07 July 2020</p>
+                    </div>
+                    <div class="col text-end">
+                      <h6>02:00pm</h6>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <p>One ticket price</p>
+                    </div>
+                    <div class="col text-end">
+                      <h6>$10</h6>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <p>Seat choosed</p>
+                    </div>
+                    <div class="col text-end">
+                      <h6>C4, C5, C6</h6>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div class="total-payment">
+                  <div class="row">
+                    <div class="col">
+                      <h4>Total Payment</h4>
+                    </div>
+                    <div class="col text-end">
+                      <h3>$30</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <img src="./assets/images/tickitz-purple.svg" alt="" />
+          <p>
+            Stop waiting in line. Buy tickets <br />
+            conveniently, watch movies quietly
+          </p>
+        </div>
+        <div class="col-12 col-lg-2">
+          <h5>Explore</h5>
+          <ul class="list-unstyled">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="list.html">List Movies</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-3">
+          <h5>Our Sponsor</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#"><img class="sponsor" src="./assets/images/ebv_id.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img class="sponsor" src="./assets/images/CineOne21.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img class="sponsor" src="./assets/images/hiflix.png" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-3">
+          <h5>Follow us</h5>
+          <ul class="list-unstyled d-none d-md-block">
+            <li>
+              <a href="https://www.facebook.com"><img src="./assets/icon/eva_facebook-outline.png" alt="" />Tickitz Cinema id</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com"><img src="./assets/icon/bx_bxl-instagram.png" alt="" />tickitz.id</a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com"><img src="./assets/icon/eva_twitter-outline.png" alt="" />tickitz.id</a>
+            </li>
+            <li>
+              <a href="#"><img src="./assets/icon/feather_youtube.png" alt="" />Tickitz
+                Cinema id</a>
+            </li>
+          </ul>
+          <ul class="list-unstyled d-sm-block d-md-none">
+            <li>
+              <a href="https://www.facebook.com"><img src="./assets/icon/eva_facebook-outline.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com"><img src="./assets/icon/bx_bxl-instagram.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com"><img src="./assets/icon/eva_twitter-outline.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com"><img src="./assets/icon/feather_youtube.png" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row justify-content-center align-items-center pt-4">
+        <div class="col-auto copyright">
+          &copy; 2022 Tickitz • All Rights Reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!--Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
